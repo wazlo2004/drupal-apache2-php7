@@ -33,7 +33,7 @@ RUN drush init -y
 # apache2設定檔與bash.bashrc啟動檔
 ADD 000-default.conf /etc/apache2/sites-available/000-default.conf
 ADD  bash.bashrc  /etc/bash.bashrc
-
+ADD  1.sh
 
 # mysql
 
@@ -47,6 +47,7 @@ RUN  apt-get install -y  php7.0-cli php7.0-common libapache2-mod-php7.0 php7.0 p
 
 
 EXPOSE 80
+
 
 
 
