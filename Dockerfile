@@ -49,5 +49,5 @@ RUN  apt-get install -y  php7.0-cli php7.0-common libapache2-mod-php7.0 php7.0 p
 EXPOSE 80
 
 
-
+CMD ["bash"]
 
